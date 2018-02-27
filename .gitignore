@@ -8,3 +8,6 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
+/.vs/229894-sedona/v15/.suo
