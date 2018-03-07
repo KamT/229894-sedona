@@ -3,30 +3,38 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/Main.css">
 </head>
 <body>
   <header class="main-header">
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li><a href="info.html">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li class="site-navigation-current"><a href="#">Гостиницы</a></li>
-      </ul>
-      <a href="#" class="main-header-logo">
-        <img src="img/index-logo.svg" width="368" height="153" alt="Логотип «Седона»">
-      </a>
-    </nav>
+    <div class="container">
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li class="site-navigation-current"><a href="#">Гостиницы</a></li>
+        </ul>
+        <a href="#" class="main-header-logo">
+          <img src="img/LOGO_main.png" width="138" height="70" alt="Логотип «HTML»">
+        </a>
+      </nav>
+    </div>
   </header>
 
   <main class="container">
-    <h1 class="visually-hidden">Добро пожаловать</h1>
+    <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
 
     <section class="intro">
-      <div class="intro_images-block">
-        <!--Этому блоку будет присвоено в CSS свойство фона, .к картинка неконтекстная-->
-        <img class="intro-welcome-text-img" src="img/text-sedona-index.svg" width="460" height="351" alt="sedona-welcome-text">
+      <div class="intro-images-block">
+        <img class="intro-welcome-text-img" src="img/WELKOM_TEXT.png" width="458" height="352" alt="sedona-welcome-text">
       </div>
+      <svg>
+        <svg>
+          width="1200px" height="57px">
+          <image x="0px" y="0px" width="1200px" height="57px" xlink:href="data:img/png;base64,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" />
+        </svg>
+      </svg>
     </section>
 
     <div class="slogan">
@@ -41,19 +49,19 @@
         <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
       </div>
       <div class="features-image-desc">
-        <img src="img/index-logo.svg" width="368" height="153" alt=Настоящий городок>
+        <img src="img/Galary_1.jpg" width="800" height="256" alt=Настоящий городок>
       </div>
 
       <ul class="features-list">
         <li class="feature-item">
           <h2>Жилье</h2>
-          <img src="img/index-logo.svg" width="368" height="153" alt=Пиктограмка Жилье>
+          <img src="img/icon-1.svg" width="75" height="72" alt=Пиктограмка Жилье>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
 
         <li class="feature-item">
           <h2>Еда</h2>
-          <img src="img/index-logo.svg" width="368" height="153" alt=Пиктограмка Еда>
+          <img src="img/icon-2.svg" width="74" height="70" alt=Пиктограмка Еда>
           <p>
             Всегда заказывайте фирменный бургер,
             вы не разочаруетесь!
@@ -62,14 +70,14 @@
 
         <li class="feature-item">
           <h2>Сувениры</h2>
-          <img src="img/index-logo.svg" width="368" height="153" alt=Пиктограмка Сувениры>
+          <img src="img/icon-3.svg" width="64" height="76" alt=Пиктограмка Сувениры>
           <p>Не только китайского, но и местного производства!</p>
         </li>
       </ul>
 
       <div class="features-item-desc">
         <div class="features-image-desc">
-          <img src="img/index-logo.svg" width="368" height="153" alt=Мост дьявола>
+          <img src="img/Galary_2.jpg" width="800" height="256" alt=Мост дьявола>
         </div>
         <h2>Там есть мост дьявола</h2>
         <span>— №2 —</span>
@@ -109,28 +117,58 @@
         <!--Здесь будет фоном карта-->
 
         <div class="search-hotel-form">
-          Форма поиска гостиницы в Седоне
+          <h2>Поиск гостиницы в Седоне</h2>
+          <form action="/echo" method="post">
+            <div class="half-width">
+              <label for="date">Дата заезда</label>
+              <input type="date" id="date" name="date" value="2017-04-24">
+              <input type="image" src="img/calendar.svg" alt="Календарь">
+            </div>
+
+            <div class="half-width">
+              <label for="date2">Дата выезда</label>
+              <input type="date" id="date" name="date" value="2017-07-04">
+
+              <input type="image" src="img/calendar.svg" alt="Календарь">
+            </div>
+
+            <div class="half-width">
+              <label for="date">Взрослые</label>
+              <input type="text" id="date" name="date" value="-2+">
+            </div>
+
+
+            <div class="half-width">
+              <label for="children">Дети</label>
+              <input type="text" name="children" class="children" id="children" value="-0+">
+            </div>
+            <div class="buttons">
+              <input type="submit" value="Найти" class="buttons">
+            </div>
+          </form>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="footer-social">
-      <!--Переход на главную страницу-->
-      <a href="#">#visitSEDONA</a>
-      <div class="social">
-        <ul class="social-btn">
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Ютуб</a></li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
+    <div class="container">
+      <div class="footer-social">
+        <!--Переход на главную страницу-->
         <a href="#">#visitSEDONA</a>
-        <a href="#">
-          <img src="img/index-logo.svg" width="368" height="153" alt="Логотип «HTML»">
-        </a>
+        <div class="social">
+          <ul class="social-btn">
+            <li><a class="social-button" href="#">Твиттер</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Ютуб</a></li>
+          </ul>
+        </div>
+        <div class="footer-copyright">
+          <a href="#">#visitSEDONA</a>
+          <a href="#">
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип «HTML»">
+          </a>
+        </div>
       </div>
     </div>
   </footer>
