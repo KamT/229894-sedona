@@ -24,7 +24,7 @@ body {
 .intro-images-block {
   width: 100%;
   height: 510px;
-  background-image: url("../img/background photo_1200.jpg"), url("../img/Ppligon.png");
+  background-image: url("../img/background_photo_1200.jpg"),url("../img/poligon.png");
   background-repeat: no-repeat;
   background-size: 768px auto, cover;
 }
