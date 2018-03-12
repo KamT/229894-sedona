@@ -28,12 +28,13 @@ body {
   background-repeat: no-repeat;
   background-size: 768px auto, cover;
 }
-
-.map {
+/* 
+.map-block {
   width: 100%;
   height: 475px;
   background-image: url("../img/map.jpg.");
 }
+  */
 
 .page-footer {
   background-color: #fefefd;

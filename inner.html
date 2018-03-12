@@ -60,12 +60,18 @@
 
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
-
-          <input id="price" type="text" name="price" value="" placeholder="от 0 до 3000">
-          <label>
-            <input type="range" id="price" name="price" min="0" max="3000" step="1" name="radio">
+          <label for="min">
+            <input id="min" type="text" name="price" value="" placeholder="от 0">
+          </label>
+          <label for="max">
+            <input id="max" type="text" name="price" value="" placeholder="до 3000">
           </label>
         </fieldset>
+
+        <div class="control">
+          <span>ползунок1 _________</span>
+          <span>ползунок2</span>
+        </div>
 
         <button type="submit" class="filter-button button">Показать</button>
       </form>
@@ -74,18 +80,16 @@
       <b>Найдено:3</b>
       <div class="search-list">
         <b>Сортировка:</b>
-        <ul>
+        <ul class="search-item">
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По рейтингу</a></li>
         </ul>
       </div>
-
-      <button class="button gallery-button gallery-button-back" type="button">
-        Вверх
-      </button>
-      <button class="search-info-bottom">Вниз</button>
-
+      <ul class="buttons">
+        <li><a href="#">Вверх</a></li>
+        <li><a href="#">Вниз</a></li>
+      </ul>
     </section>
 
     <section class="catalog">

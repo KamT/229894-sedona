@@ -24,16 +24,13 @@
 
   <main class="container">
     <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-
     <section class="intro">
       <div class="intro-images-block">
-        <a href="#">
-          <img class="intro-welcome-text-img" src="img/welcome_text.png" width="458" height="352" alt="sedona-welcome-text"></a>
+        <img class="intro-welcome-text-img" src="img/welcome_text.png" width="458" height="352" alt="sedona-welcome-text">
       </div>
     </section>
 
     <div class="slogan">
-      <h2 class="visually-hidden">Описания, преимуществ Седоны</h2>
       <h2 class="slogan_title">Седона – небольшой городок в аризоне, заслуживающий большего!</h2>
       <p>Рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
     </div>
@@ -105,40 +102,37 @@
       </div>
     </section>
 
-    <section class="modal modal-map">
+    <section class="search-hotels">
       <h2 class="visually-hidden">Лучшие предложения гостиниц в Седоне</h2>
       <h2>Заинтересовались?</h2>
-      <h3 class="visually-hidden">Карта Седоны</h3>
       <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <p>
-        <img src="img/map.jpg" width="1200" height="593" alt="Адрес гостиницы в Седоне">
-      </p>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="button" type="submit">Поиск гостиницы в Седоне</button>
+    </section>
 
-      <section class="search">
-        <h2>Поиск гостиницы в Седоне</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p class="search-item">
-            <label for="search-date">Дата заезда:</label>
-            <input id="date-in" type="text" name="date-in" value="" placeholder="2017-04-24">
-            <input type="image" src="img/calendar.svg" alt="Календарь">
-          </p>
-          <p class="search-item">
-            <label for="search-date">Дата выезда:</label>
-            <input id="date-out" type="text" name="date-out" value="" placeholder="2017-07-04">
-            <input type="image" src="img/calendar.svg" alt="Календарь">
-          </p>
-          <p class="search-item">
-            <label for="search-adult">Взрослые</label>
-            <input id="adult" type="text" name="adult" value="" placeholder="-2+">
-          </p>
-          <p class="search-item">
-            <label for="search-children">Дети</label>
-            <input id="children" type="text" name="children" value="" placeholder="-0+">
-          </p>
-          <button class="button" type="submit">Найти</button>
-        </form>
-      </section>
+    <section class="map-block">
+      <h2>Поиск гостиницы в Седоне</h2>
+      <h3 class="visually-hidden">Карта Седоны</h3>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p class="search-item">
+          <label for="search-date">Дата заезда:</label>
+          <input id="date-in" type="text" name="date-in" value="" placeholder="2017-04-24">
+          <input type="image" src="img/calendar.svg" alt="Календарь">
+        </p>
+        <p class="search-item">
+          <label for="search-date">Дата выезда:</label>
+          <input id="date-out" type="text" name="date-out" value="" placeholder="2017-07-04">
+          <input type="image" src="img/calendar.svg" alt="Календарь">
+        </p>
+        <p class="search-item">
+          <label for="search-adult">Взрослые</label>
+          <input id="adult" type="text" name="adult" value="" placeholder="-2+">
+        </p>
+        <p class="search-item">
+          <label for="search-children">Дети</label>
+          <input id="children" type="text" name="children" value="" placeholder="-0+">
+        </p>
+        <button class="button" type="submit">Найти</button>
+      </form>
     </section>
   </main>
 
