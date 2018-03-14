@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/Main.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <header class="main-header">
@@ -31,7 +33,7 @@
     </section>
 
     <div class="slogan">
-      <h2 class="slogan_title">Седона – небольшой городок в аризоне, заслуживающий большего!</h2>
+      <h2 class="slogan-title">Седона – небольшой городок в аризоне,<br /> заслуживающий большего!</h2>
       <p>Рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
     </div>
 
@@ -46,13 +48,13 @@
       </div>
 
       <ul class="features-list">
-        <li class="feature-item">
+        <li class="feature-desc">
           <h2>Жилье</h2>
           <img src="img/icon-1.svg" width="75" height="72" alt=Пиктограмка Жилье>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
 
-        <li class="feature-item">
+        <li class="feature-desc">
           <h2>Еда</h2>
           <img src="img/icon-2.svg" width="74" height="70" alt=Пиктограмка Еда>
           <p>
@@ -61,7 +63,7 @@
           </p>
         </li>
 
-        <li class="feature-item">
+        <li class="feature-desc">
           <h2>Сувениры</h2>
           <img src="img/icon-3.svg" width="64" height="76" alt=Пиктограмка Сувениры>
           <p>Не только китайского, но и местного производства!</p>
@@ -78,7 +80,7 @@
       </div>
 
       <div class="features-item">
-        <ul class="features-list-desc">
+        <ul class="features-list">
           <li><h2>Небольшая площадь</h2></li>
           <li>— №3 —</li>
           <li>Все достопримечательности находятся очень близко</li>
@@ -86,7 +88,7 @@
       </div>
 
       <div class="features-item">
-        <ul class="features-list-desc">
+        <ul class="features-list">
           <li><h2>Красивая дорога</h2></li>
           <li>— №4 —</li>
           <li>Ехать в седону из лас-вегаса совсем не скучно!</li>
@@ -94,7 +96,7 @@
       </div>
 
       <div class="features-item">
-        <ul class="features-list-desc">
+        <ul class="features-list">
           <li><h2>Мало туристов</h2></li>
           <li>— №5 —</li>
           <li>Большинство едет в гранд каньон и толпится там</li>
@@ -106,7 +108,7 @@
       <h2 class="visually-hidden">Лучшие предложения гостиниц в Седоне</h2>
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="button" type="submit">Поиск гостиницы в Седоне</button>
+      <button class="button button1" type="submit">Поиск гостиницы в Седоне</button>
     </section>
 
     <section class="map-block">
@@ -141,13 +143,14 @@
       <div class="footer-social">
         <div class="social">
           <ul class="social-btn">
-            <li><a class="social-button" href="#">Твиттер</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Ютуб</a></li>
+            <li><a class="social-button" href="https://twitter.com/">Твиттер</a></li>
+            <li><a class="social-button" href="https://www.facebook.com/">Фейсбук</a></li>
+            <li><a class="social-button" href="https://www.youtube.com/">Ютуб</a></li>
           </ul>
         </div>
         <div class="footer-copyright">
-          <a href="#">#visitSEDONA</a>
+          <a class="visitsedona" href="#">#visitSEDONA</a>
+          <p>WEBSITE by</p>
           <a href="#">
             <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип «HTML»">
           </a>
