@@ -138,11 +138,6 @@ a {
   font-weight: 700;
 }
 
-.social-btn {
-  list-style: none;
-}
-
-
 .visitsedona {
   font-size: 21px;
   line-height: 26px;
@@ -207,25 +202,27 @@ a {
   }
 
 .social-btn {
-  background-color: #81b3d2;
+  list-style: none;
   text-align: center;
 }
 
-  .social-btn:hover {
+.social-button {
+  background-color: #81b3d2;
+}
+
+  .social-button:hover {
     background-color: #669ec0;
   }
 
-  .social-btn:active {
+  .social-button:active {
     background-color: #5496bd;
-    border: #5496bd;
   }
 
 .visually-hidden {
   display: none;
 }
 
-.filter {
-  background-image: url("filter_background.jpg");
+.filters {
   background-color: #2f698b;
 }
 
