@@ -9,19 +9,21 @@
 </head>
 <body>
   <header class="main-header">
-    <div class="container">
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li class="site-navigation-current"><a href="#">Гостиницы</a></li>
-        </ul>
+    <nav class="main-navigation">
+      <div class="main-navigation-wrapper">
+        <div class="container">
+          <ul class="site-navigation">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li class="site-navigation-current"><a href="#">Гостиницы</a></li>
+          </ul>
+        </div>
         <a href="#" class="main-header-logo">
           <img src="img/logo_main.png" width="138" height="70" alt="Логотип «HTML»">
         </a>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
   <main class="container">
@@ -41,12 +43,14 @@
       <div class="features-item-desc">
         <h2>Настоящий городок</h2>
         <span>— №1 —</span>
-        <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+        <p>Седона не аттракцион для туристов,<br /> там течет своя жизнь</p>
       </div>
       <div class="features-image-desc">
         <a href="#"><img src="img/galary_1.jpg" width="800" height="256" alt=Настоящий городок></a>
       </div>
+    </section>
 
+    <section class="list">
       <ul class="features-list">
         <li class="feature-desc">
           <h2>Жилье</h2>
@@ -69,40 +73,40 @@
           <p>Не только китайского, но и местного производства!</p>
         </li>
       </ul>
+    </section>
 
+    <section class="features">
+      <div class="features-image-desc">
+        <a href="#"><img src="img/galary_2.jpg" width="800" height="256" alt=Мост дьявола></a>
+      </div>
       <div class="features-item-desc">
-        <div class="features-image-desc">
-          <a href="#"><img src="img/galary_2.jpg" width="800" height="256" alt=Мост дьявола></a>
-        </div>
         <h2>Там есть мост дьявола</h2>
         <span>— №2 —</span>
         <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
       </div>
+    </section>
 
-      <div class="features-item">
-        <ul class="features-list">
-          <li><h2>Небольшая площадь</h2></li>
-          <li>— №3 —</li>
-          <li>Все достопримечательности находятся очень близко</li>
-        </ul>
+    <section class="features">
+      <div class="features-item-desc1">
+        <h2>Небольшая площадь</h2>
+        <span>— №3 —</span>
+        <p>
+          ВСЕ достопримечательности
+          находятся очень близко
+        </p>
       </div>
-
-      <div class="features-item">
-        <ul class="features-list">
-          <li><h2>Красивая дорога</h2></li>
-          <li>— №4 —</li>
-          <li>Ехать в седону из лас-вегаса совсем не скучно!</li>
-        </ul>
+      <div class="features-item-desc1">
+        <h2>Красивая дорога</h2>
+        <span>— №4 —</span>
+        <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
       </div>
-
-      <div class="features-item">
-        <ul class="features-list">
-          <li><h2>Мало туристов</h2></li>
-          <li>— №5 —</li>
-          <li>Большинство едет в гранд каньон и толпится там</li>
-        </ul>
+      <div class="features-item-desc1">
+        <h2>Мало туристов</h2>
+        <span>— №5 —</span>
+        <p>Большинство едет в гранд каньон и толпится там</p>
       </div>
     </section>
+
 
     <section class="search-hotels">
       <h2 class="visually-hidden">Лучшие предложения гостиниц в Седоне</h2>
@@ -111,7 +115,7 @@
       <button class="button button1" type="submit">Поиск гостиницы в Седоне</button>
     </section>
 
-    <section class="map-block">
+    <section class="search-block">
       <h2>Поиск гостиницы в Седоне</h2>
       <h3 class="visually-hidden">Карта Седоны</h3>
       <form action="https://echo.htmlacademy.ru" method="post">
@@ -137,23 +141,26 @@
       </form>
     </section>
   </main>
+  <section class="map-block">
+    <div class="img-map-block"></div>
+  </section>
 
   <footer class="page-footer">
     <div class="container">
       <div class="footer-social">
-        <div class="social">
-          <ul class="social-btn">
-            <li><a class="social-button" href="https://twitter.com/">Твиттер</a></li>
-            <li><a class="social-button" href="https://www.facebook.com/">Фейсбук</a></li>
-            <li><a class="social-button" href="https://www.youtube.com/">Ютуб</a></li>
-          </ul>
-        </div>
         <div class="footer-copyright">
           <a class="visitsedona" href="#">#visitSEDONA</a>
           <p>WEBSITE by</p>
           <a href="#">
             <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип «HTML»">
           </a>
+        </div>
+        <div class="social">
+          <ul class="social-btn">
+            <li><a class="social-button" href="https://twitter.com/"></a></li>
+            <li><a class="social-button" href="https://www.facebook.com/"></a></li>
+            <li><a class="social-button" href="https://www.youtube.com/"></a></li>
+          </ul>
         </div>
       </div>
     </div>
