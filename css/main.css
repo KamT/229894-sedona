@@ -13,6 +13,26 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-navigation {
   line-height: 26px;
 }
@@ -27,13 +47,17 @@ a {
     color: #000000;
   }
 
-    .site-navigation a:hover {
-      color: #81b3d2;
-    }
+.site-navigation-current a {
+  color: #766357;
+}
 
-    .site-navigation a:focus {
-      color: rgba(0,0,0, 0.3);
-    }
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:focus {
+  color: rgba(0,0,0, 0.3);
+}
 
 .slogan {
   text-align: center;
@@ -140,7 +164,7 @@ a {
 }
 
 .visitsedona {
-   color: #000000;
+  color: #000000;
 }
 
 .button {
@@ -219,9 +243,6 @@ a {
     background-color: #5496bd;
   }
 
-.visually-hidden {
-  display: none;
-}
 
 .filters {
   background-color: #2f698b;
@@ -324,7 +345,7 @@ legend {
   margin: 0;
   padding: 0;
   background-color: rgba(255, 106, 0, 0.39);
-  }
+}
 
 .main-navigation {
   margin: 0;
@@ -336,12 +357,13 @@ legend {
   outline: 2px solid #74f210;
 }
 
-.main-header-logo a {
-  
-  margin: 0;
-  padding: 0;
+.main-header-logo a::before {
+  content: "";
+  position: absolute;
+  margin:0 auto;
   width: 138px;
   height: 70px;
+  background-position: 0 0;
 }
 
 .site-navigation {
@@ -350,6 +372,7 @@ legend {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   list-style: none;
   min-width: 1056px;
   padding-top: 20px;
@@ -357,17 +380,18 @@ legend {
 }
 
 .main-navigation-wrapper {
+  position: relative;
   max-width: 1200px;
   min-width: 768px;
   margin: 0 auto;
-  }
+}
 
 .container {
   max-width: 1200px;
   min-width: 768px;
   margin: 0 auto;
   padding: 0 73px;
-  }
+}
 
 .main-navigation-wrapper .container {
   display: flex;
@@ -479,7 +503,6 @@ form {
   min-height: 450px;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 
 .map-block {
@@ -493,7 +516,6 @@ form {
   padding: 0;
   min-height: 150px;
   outline: 4px solid #74f210;
-  
 }
 
 .footer-social {
@@ -518,15 +540,15 @@ form {
   .footer-copyright p {
     margin-right: 8px;
     margin-top: 55px;
-    min-width:75px;
+    min-width: 75px;
   }
 
   .footer-copyright img {
     margin: 0;
     padding: 0;
     margin-right: 100px;
-    margin-top:40px;
-    }
+    margin-top: 40px;
+  }
 
 .visitsedona {
   margin: 0;
@@ -562,11 +584,3 @@ form {
   margin-left: 6px;
   background-color: #81b3d2;
 }
-
-
-
-
-
-
-
-
