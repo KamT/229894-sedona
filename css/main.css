@@ -50,20 +50,18 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-current a {
   color: #766357;
-  
 }
+
 .site-navigation-current,
 .site-navigation-2 {
   margin-right: auto;
   margin-left: 0;
-  
 }
 
 .site-navigation-3,
 .site-navigation-4 {
   margin-left: auto;
   margin-right: 0;
-  
 }
 
 
@@ -140,6 +138,7 @@ input[type="radio"].visually-hidden {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
+    margin-bottom: 50px;
   }
 
 .search-item input {
@@ -149,30 +148,28 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
+
+
   .search-item input:hover {
     background-color: #ebebeb;
   }
 
-  .search-item input:focus {
-    background-color: transparent;
-    border: 2px solid #ebebeb;
-  }
-
   .search-item input:active {
     background-color: #ebebeb;
-    border: 2px solid #ebebeb
   }
-
-
-.map-block {
-  text-align: center;
-}
 
 .search-item label {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
 }
+
+
+.map-block {
+  text-align: center;
+}
+
+
 
 .visitsedona {
   color: #000000;
@@ -185,22 +182,20 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #81b3d2;
-  padding: 5px 15px;
+  padding: 6px 16px;
 }
 
 .button-search {
   display: block;
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  font: inherit;
   font-weight: 700;
-  vertical-align: middle;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 10px;
-  margin-right: 0;
   background-color: #81b3d2;
+  padding: 20px 195px;
 }
-
 
 .button:hover {
   background-color: #669ec0;
@@ -216,8 +211,21 @@ input[type="radio"].visually-hidden {
   border: #5496bd;
 }
 
+
+.button-search:hover {
+  background-color: #669ec0;
+}
+
+.button-search:active {
+  background-color: #669ec0;
+  color: rgba(255,255,255, 0.3);
+  border: #5496bd;
+}
+
+
 .button1 {
-  padding: 5px 15px;
+  display: block;
+  padding: 35px 140px;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
@@ -236,10 +244,12 @@ input[type="radio"].visually-hidden {
   }
 
 .button2 {
+  font: inherit;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
   background-color: #766357;
+  padding: 6px 16px;
 }
 
   .button2:hover {
@@ -251,9 +261,6 @@ input[type="radio"].visually-hidden {
     color: rgba(255,255,255, 0.3);
   }
 
-.social {
-  background-color: green;
-}
 
 .social-btn {
   list-style: none;
@@ -378,7 +385,6 @@ legend {
 .main-navigation {
   margin: 0;
   padding: 0;
-  
 }
 
 .main-header-logo {
@@ -395,13 +401,11 @@ legend {
   padding: 0;
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   flex-wrap: wrap;
   list-style: none;
   min-width: 100%;
-  height:55px;
-  
-  
+  height: 55px;
 }
 
 .main-navigation-wrapper {
@@ -434,6 +438,7 @@ legend {
   min-height: 520px;
   background-image: url("../img/background_photo1_1200.jpg");
   background-repeat: no-repeat;
+  background-color: #5496bd;
   background-size: 100% 100%;
   margin-bottom: 60px;
   padding-top: 76px;
@@ -523,25 +528,53 @@ legend {
 
 
 .search-hotels {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
   margin-bottom: 50px;
-  outline: 2px solid #ff6a00;
+  outline: 4px solid #ff6a00;
 }
 
 .search-item {
   text-align: left;
+  width: 460px;
 }
 
+.search-conteiner {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 568px;
+  height: 395px;
+  outline: 4px solid #1f6a00;
+}
+
+.search-conteiner-1 {
+  position: relative;
+  outline: 2px solid #ff6a00;
+  margin: 55px;
+}
+
+
 .search-block {
+  display: flex;
+  justify-content: center;
   outline: 2px solid #ff6a00;
 }
 
   .search-block h2,
-  form {
+  .form {
     margin: 0 auto;
-    text-align: center;
   }
+
+  .search-block form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 
 .img-map-block {
   margin: 0 auto;
@@ -563,7 +596,6 @@ legend {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  background-color: yellow;
 }
 
 .website {
@@ -571,7 +603,6 @@ legend {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: red;
 }
 
   .website p {
@@ -593,7 +624,7 @@ legend {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #edef12;
+  background-color: rgba(255, 255, 255, 0.91);
 }
 
 .footer-social {
@@ -602,7 +633,6 @@ legend {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: red;
 }
 
 .social-btn {

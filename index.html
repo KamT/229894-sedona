@@ -33,12 +33,10 @@
         <img class="intro-welcome-text-img" src="img/welcome_text.png" width="458" height="352" alt="sedona-welcome-text">
       </div>
     </section>
-
     <div class="slogan">
       <h2 class="slogan-title">Седона – небольшой городок в аризоне,<br /> заслуживающий большего!</h2>
       <p>Рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
     </div>
-
     <section class="features">
       <div class="features-item-desc">
         <h2>Настоящий городок</h2>
@@ -49,7 +47,6 @@
         <img src="img/galary_1.jpg" width="800" height="256" alt=Настоящий городок>
       </div>
     </section>
-
     <section class="list">
       <ul class="features-list">
         <li class="feature-desc">
@@ -57,7 +54,6 @@
           <h2>Жилье</h2>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
-
         <li class="feature-desc">
           <img src="img/icon-3.svg" width="74" height="70" alt=Пиктограмка Еда>
           <h2>Еда</h2>
@@ -66,7 +62,6 @@
             вы не разочаруетесь!
           </p>
         </li>
-
         <li class="feature-desc">
           <img src="img/icon-2.svg" width="64" height="76" alt=Пиктограмка Сувениры>
           <h2>Сувениры</h2>
@@ -74,7 +69,6 @@
         </li>
       </ul>
     </section>
-
     <section class="features">
       <div class="features-image-desc">
         <img src="img/galary_2.jpg" width="800" height="256" alt=Мост дьявола>
@@ -85,7 +79,6 @@
         <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
       </div>
     </section>
-
     <section class="features">
       <div class="features-item-desc1">
         <h2>Небольшая площадь</h2>
@@ -107,37 +100,38 @@
       </div>
     </section>
 
-
     <section class="search-hotels">
       <h2 class="visually-hidden">Лучшие предложения гостиниц в Седоне</h2>
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="button button1" type="submit">Поиск гостиницы в Седоне</button>
     </section>
-
     <section class="search-block">
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p class="search-item">
-          <label for="search-date">Дата заезда:</label>
-          <input id="date-in" type="text" name="date-in" value="" placeholder="2017-04-24">
-          <input type="image" src="img/calendar.svg" alt="Календарь">
-        </p>
-        <p class="search-item">
-          <label for="search-date">Дата выезда:</label>
-          <input id="date-out" type="text" name="date-out" value="" placeholder="2017-07-04">
-          <input type="image" src="img/calendar.svg" alt="Календарь">
-        </p>
-        <p class="search-item">
-          <label for="search-adult">Взрослые</label>
-          <input id="adult" type="text" name="adult" value="" placeholder="-2+">
-        </p>
-        <p class="search-item">
-          <label for="search-children">Дети</label>
-          <input id="children" type="text" name="children" value="" placeholder="-0+">
-        </p>
-        <button class="button-search" type="submit">Найти</button>
-      </form>
-
+      <div class="search-conteiner">
+        <div class="search-conteiner-1">
+          <form class="search-items" action="https://echo.htmlacademy.ru" method="post">
+            <p class="search-item">
+              <label for="search-date">Дата заезда:</label>
+              <input id="date-in" type="text" name="date-in" value="" placeholder="2017-04-24">
+              <input type="image" src="img/calendar.svg" alt="Календарь">
+            </p>
+            <p class="search-item">
+              <label for="search-date">Дата выезда:</label>
+              <input id="date-out" type="text" name="date-out" value="" placeholder="2017-07-04">
+              <input type="image" src="img/calendar.svg" alt="Календарь">
+            </p>
+            <p class="search-item">
+              <label for="search-adult">Взрослые</label>
+              <input id="adult" type="text" name="adult" value="" placeholder="-2+">
+            </p>
+            <p class="search-item">
+              <label for="search-children">Дети</label>
+              <input id="children" type="text" name="children" value="" placeholder="-0+">
+            </p>
+          </form>
+          <button class="button-search" type="submit">Найти</button>
+        </div>
+      </div>
     </section>
   </main>
   <section class="map-block">
@@ -146,7 +140,6 @@
       <div class="img-map-block"></div>
     </div>
   </section>
-
   <footer class="page-footer">
     <div class="container">
       <div class="footer-copyright">
@@ -169,6 +162,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
