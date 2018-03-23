@@ -310,6 +310,8 @@ input[type="radio"].visually-hidden {
   text-align: left;
   width: 460px; 
 }
+
+
 .button-search {
   display: block;
   position: absolute;
@@ -354,8 +356,9 @@ input[type="radio"].visually-hidden {
 }
 
 /*фото карты*/
+
 .map-block {
-  text-align: center;
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -479,8 +482,9 @@ input[type="radio"].visually-hidden {
 }
 
 .button1 {
-  position: absolute;
-  padding: 35px 140px;
+ 
+  width:568px;
+  height:86px;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
