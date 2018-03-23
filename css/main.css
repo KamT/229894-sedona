@@ -290,7 +290,7 @@ input[type="radio"].visually-hidden {
   transform: translate(-50%, 0);
   display: flex;
   justify-content: center;
-  outline: 2px solid #ff6a00;
+  background-color: #ffffff;
   
 }
 
@@ -300,7 +300,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   width: 568px;
   height: 395px;
-  outline: 4px solid #1f6a00;
+  
 }
 
 .search-conteiner-1 {
@@ -326,6 +326,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background-color: #81b3d2;
   padding: 20px 195px;
+  border: none;
 }
 
 .button-search:hover {
@@ -335,7 +336,7 @@ input[type="radio"].visually-hidden {
 .button-search:active {
   background-color: #669ec0;
   color: rgba(255,255,255, 0.3);
-  border: #5496bd;
+
 }
 
 .search-item input {
@@ -494,6 +495,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background-color: #766357;
   border: #503e33;
+  border: none;
 }
 
   .button1:hover {
