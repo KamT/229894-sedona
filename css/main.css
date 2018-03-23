@@ -259,33 +259,29 @@ input[type="radio"].visually-hidden {
 }
 
 
-/* Поиск гостиницы в седоне*/
+/* Заинтересовались? Поиск гостиницы в седоне*/
 
-.search-hotels {
+.search-hotels{
   text-align: center;
-  background-color: #ffffff;display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 50px;
-  outline: 4px solid #ff6a00;
+  outline-color:1px solid #ff6a00;
 }
 
-.search-hotels h2 {
-  font-size: 21px;
-  line-height: 21px;
+.search-hotels h2{
+  font-size: 30px;
+  line-height: 36px;
   font-weight: 700;
 }
 
 .search-hotels p {
   text-align: center;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 24px;
   font-weight: 400;
   margin-bottom: 50px;
 }
+
+
+/*Форма заезда*/
 
 .search-block {
   display: flex;
@@ -309,7 +305,6 @@ input[type="radio"].visually-hidden {
   margin: 55px;
 }
 
-/*Форма поиска дата заезда/выезда*/
 
 .search-item {
   text-align: left;
@@ -459,6 +454,8 @@ input[type="radio"].visually-hidden {
 /*Кнопки*/
 .button {
   font: inherit;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 700;
   vertical-align: middle;
   text-transform: uppercase;
@@ -482,7 +479,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button1 {
-  display: block;
+  position: absolute;
   padding: 35px 140px;
   font-size: 21px;
   line-height: 26px;
@@ -653,6 +650,7 @@ legend {
 /*Фото и описания гостиниц Amara Resort & Spa*/
 
 .catalog{
+
   margin: 0px;
   padding:0px;
 }
@@ -665,16 +663,29 @@ legend {
   padding:0px;
   outline: 1px solid #74f210;
 }
-
 .catalog-list-desc{
   margin:0;
   padding:0;
-  display:flex;
+  display: flex;
   flex-direction:column;
   justify-content: space-between;
   align-items: center;
-  outline: 1px solid #74f210;
+  width:360px;
+  background-color: #74f210;
 }
+.catalog-list-desc span{
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+
+
 .catalog-list-desc h2 a {
   font-size: 21px;
   line-height: 26px;
