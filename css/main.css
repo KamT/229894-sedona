@@ -284,6 +284,10 @@ input[type="radio"].visually-hidden {
 /*Форма заезда*/
 
 .search-block {
+  position: absolute;
+  top:0;
+  left:50%;
+  transform: translate(-50%, 0);
   display: flex;
   justify-content: center;
   outline: 2px solid #ff6a00;
