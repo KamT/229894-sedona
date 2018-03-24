@@ -37,19 +37,26 @@
   </header>
 
   <main class="container">
+
+    <!-- Фильтр -->
     <section class="filters">
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        
+        <!--Чекбокс Инфраструктура -->
         <fieldset>
+          
           <legend>Инфраструктура:</legend>
           <ul>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Бассейн" id="Бассейн" checked>
               <label for="Бассейн">Бассейн</label>
             </li>
+
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Парковка" id="Парковка">
               <label for="Парковка">Парковка</label>
             </li>
+
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Wi-fi" id="Wi-fi">
               <label for="Wi-fi">Wi-fi</label>
@@ -57,6 +64,7 @@
           </ul>
         </fieldset>
 
+        <!--Чекбокс Тип жилья-->
         <fieldset>
           <legend>Тип жилья:</legend>
           <ul>
@@ -64,10 +72,12 @@
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Гостиница" id="Гостиница" checked>
               <label for="Гостиница">Гостиница</label>
             </li>
+            
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Мотель" id="Мотель">
               <label for="Мотель">Мотель</label>
             </li>
+            
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Апартаменты" id="Апартаменты">
               <label for="Апартаменты">Апартаменты</label>
@@ -75,6 +85,7 @@
           </ul>
         </fieldset>
 
+        <!--Фильтр Стоимость в сутки-->
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
           <label for="min">
@@ -85,19 +96,22 @@
           </label>
         </fieldset>
 
+        <!--Ползунки управления-->
         <div class="control">
           <span>ползунок1 _________</span>
           <span>ползунок2</span>
         </div>
 
+        <!--Кнопка показать-->
         <button type="submit" class="button">Показать</button>
       </form>
     </section>
 
-
+    <!--Блок сортировки -->
     <section class="search-info">
       <b>Найдено:3</b>
       <p>Cортировка:</p>
+
       <div class="search-list-info">
         <ul class="search-item-info">
           <li>
@@ -111,6 +125,7 @@
           </li>
         </ul>
       </div>
+
       <ul class="buttons-search-info">
         <li class="buttons-top">
           <a href="#">
@@ -131,28 +146,47 @@
       </ul>
     </section>
 
-
+    <!--Каталог гостиниц -->
     <section class="catalog">
+      
       <h2 class="visually-hidden">Описание гостинниц, цена</h2>
-      <ul class="catalog-list">
-        <li class="catalog-image">
+      
+      <div class="catalog-list-amara">
+        <!--Фото гостиницы -->
+        <div class="catalog-image">
           <a href="catalog-item.html">
             <img src="img/amara_resort_ spa_img.jpg" width="135" height="90" alt="Amara Resort & Spa">
           </a>
-        </li>
-      </ul>
-      <div class="catalog-list-desc">
+        </div>
+      
+        <!--Заголовок и описание -->
+        <div class="catalog-desc">
           <h2>
             <a href="#">Amara Resort & Spa</a>
           </h2>
-          <div class="catalog-list-desc-2">
-            <span>Гостиница</span>
-            <span>от 4000</span>
-          
-            <a class="button" href="#">Подробнее</a>
-            <a class="button2" href="#">Забронировать</a>
-          </div>
+          <span>Гостиница</span>
+          <span>от 4000</span>
+          <a class="button" href="#">Подробнее</a>
+          <a class="button2" href="#">Забронировать</a>
         </div>
+      
+        <!--Рейтинг -->
+        <div class="catalog-rating">
+      
+        </div>
+      </div>
+
+      
+
+
+
+        
+      
+          
+          
+            
+          
+         
       
 
       <div class="rating-box">
@@ -160,6 +194,7 @@
           <img src="img/star.svg" width="18" height="17" alt="4 Звезды">
           <span>Рейтинг: 8,5</span>
         </div>
+      </div>
 
         <ul class="catalog-list">
           <li class="catalog-image-2">

@@ -660,10 +660,12 @@ legend {
 /*Фото и описания гостиниц Amara Resort & Spa*/
 
 .catalog{
-
   margin: 0px;
   padding:0px;
+  outline: 1px solid #ff6a00;
 }
+
+
 .catalog li{
   list-style: none;
 }
@@ -671,7 +673,8 @@ legend {
 .catalog-list{
   margin: 0px;
   padding:0px;
-  outline: 1px solid #74f210;
+
+  
 }
 .catalog-list-desc{
   margin:0;
