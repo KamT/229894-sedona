@@ -761,12 +761,26 @@ legend {
   flex-direction:row;
   align-items: center;
   padding-top:30px;
+  padding-bottom:30px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .motel{
   margin-right:65px;
 }
 
-
+/* Гостиница Villas*/
+.catalog-list-villas{
+  margin: 0px;
+  padding:0px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction:row;
+  align-items: center;
+  padding-top:30px;
+}
+.villas{
+  margin-right:20px;
+}
 
 /*стилизация заголовка*/
 .catalog-desc h2 a {
