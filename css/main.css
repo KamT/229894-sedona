@@ -17,7 +17,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-/**/
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -541,13 +541,12 @@ input[type="radio"].visually-hidden {
   min-height:215px;
   background-color: #2f698b;
   background-image: url(../img/filter_background.jpg);
-  outline:4px solid #74f210;
+  
  }
 
 .filter{
   margin: 0;
   padding: 0;
-  outline:2px solid #f26a10;
   margin-left:70px;
   width:1056px;
   
@@ -583,28 +582,35 @@ legend {
   margin-bottom:30px;
 }
 
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  background-image: url(../img/checkbox-on.svg);
+  background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  left:70px;
+  left:-40px;
   width: 26px;
   height: 26px;
-  /* border: 2px solid #000000;*/
+  /*border: 2px solid #000000;*/
 }
 
 .filter-input-checkbox:checked + label::after {
   content: "";
-
   position: absolute;
-  background-image: url(../img/checkbox-of.svg);
-  background-color: green;
-  left:70px;
+  background-image: url(../img/checkbox-on.svg);
+  left:-40px;
   width: 26px;
   height: 26px;
+  
 }
+
 .filter-option {
   margin: 0;
   padding: 0;
