@@ -527,6 +527,8 @@ input[type="radio"].visually-hidden {
 }
 
 /*Внутренняя страница*/
+
+/*Фильтра*/
 .filters {
   margin: 0;
   padding: 0;
@@ -665,32 +667,35 @@ legend {
   outline: 1px solid #ff6a00;
 }
 
-
 .catalog li{
   list-style: none;
 }
 
-.catalog-list{
+.catalog-list-amara{
+  display: flex;
   margin: 0px;
   padding:0px;
-
+  outline: 1px solid #ff6a00;
   
 }
-.catalog-list-desc{
-  margin:0;
-  padding:0;
-  display: flex;
-  flex-direction:column;
-  justify-content: space-between;
-  align-items: center;
+.catalog-image{
+  margin: 0px;
+  padding:0px;
+  outline: 1px solid #ff6a00;
+  width:135px;
+  margin-right:30px;
+}
+
+.catalog-desc{
+  margin: 0px;
+  padding:0px;
+  outline: 1px solid #ff6a00;
   width:360px;
-  background-color: #74f210;
+
 }
-.catalog-list-desc span{
-  margin:0;
-  padding:0;
+
+catalog-desc a{
   display: flex;
-  flex-direction:row;
   justify-content: space-between;
   align-items: center;
 
@@ -698,19 +703,32 @@ legend {
 
 
 
+.catalog-rating{
+  margin: 0px;
+  padding:0px;
+  outline: 1px solid #ff6a00;
+  width:110px;
+  background-color:#f2f2f2;
+  margin-right:0;
+  margin-left:auto;
 
-.catalog-list-desc h2 a {
+}
+
+
+
+/*стилизация заголовка*/
+.catalog-desc h2 a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
 }
 
-.catalog-list-desc h2 a:hover {
+.catalog-desc h2 a:hover {
   color: #81b3d2;
   }
 
-.catalog-list-desc h2 a:active {
+.catalog-desc h2 a:active {
   color: rgba(0,0,0, 0.3);
 }
 
