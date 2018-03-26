@@ -589,7 +589,7 @@ legend {
   user-select: none;
 }
 
-.filter-input-checkbox + label::before {
+.filter-input-checkbox:not(:checked) + label::before {
   content: "";
   position: absolute;
   background-image: url(../img/checkbox-off.svg);
@@ -605,6 +605,8 @@ legend {
   content: "";
   position: absolute;
   background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
   left:-40px;
   width: 26px;
   height: 26px;
