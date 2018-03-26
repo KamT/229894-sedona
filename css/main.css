@@ -670,6 +670,10 @@ legend {
 .catalog li{
   list-style: none;
 }
+.catalog-desc h2{
+  margin: 0px;
+  padding:0px;
+}
 
 .catalog-list-amara{
   display: flex;
@@ -694,11 +698,12 @@ legend {
 
 }
 
-catalog-desc a{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+.catalog-desc span{
+  margin: 0px;
+  padding:0px;
+  margin-bottom: 15px;
+  outline: 1px solid #ff6a00;
+ 
 }
 
 
