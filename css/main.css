@@ -17,7 +17,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+/**/
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -528,32 +528,76 @@ input[type="radio"].visually-hidden {
     color: rgba(255,255,255, 0.3);
 }
 
+
+
 /*Внутренняя страница*/
 
-/*Фильтра*/
+/*Фильтр*/
 .filters {
+  position: relative;
   margin: 0;
   padding: 0;
+  min-width:1056px;
   min-height:215px;
   background-color: #2f698b;
   background-image: url(../img/filter_background.jpg);
-  min-height:220px;
-  box-sizing: border-box;
+  outline:4px solid #74f210;
+ }
+
+.filter{
+  margin: 0;
+  padding: 0;
+  outline:2px solid #f26a10;
+  margin-left:70px;
+  width:1056px;
+  
 }
 
 legend {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
+  padding-top:28px;
+  padding-bottom:25px;
 }
 
 .filter fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
+.filter ul {
+  padding: 0;
+  margin: 0;
+  margin-left:40px;
+  list-style: none;
+ 
+}
+
+.filter li {
+  padding: 0;
+  margin: 0;
+  margin-bottom:30px;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  
+  width: 26px;
+  height: 26px;
+
+  border: 2px solid #000000;
+}
 .filter-option {
+  margin: 0;
+  padding: 0;
   list-style: none;
   color: #ffffff;
+  
 }
 
 /*Найдено-сортировка по цене по типу по рейтингу*/
