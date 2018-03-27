@@ -163,7 +163,7 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
 }
 
-/*Описание городка*/
+/*Там есть мост дьявола Описание городка*/
 .features {
   display: flex;
   flex-direction: row;
@@ -171,8 +171,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 50px;
-  outline: 1px solid #ff6a00;
+  
 }
 
 .feature-item {
@@ -226,9 +225,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   background-color: #ebebeb;
-  
   min-height: 256px;
-  outline:2px solid #ff6a00;
+  
 }
 
 .features-item-desc1 h2 {
@@ -257,31 +255,30 @@ input[type="radio"].visually-hidden {
   width:800px;
   height:256px;
   
+  
 }
-
 .feature-desc {
   margin: 0;
   padding: 0;
+  
 }
-
-.feature-desc h2 {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  margin-bottom: 25px;
-  background-color: #ff6a00;
-}
-
 .feature-desc p {
   margin: 0;
   padding: 0;
+  text-align: top;
+  background-color: #00ff15;
+  
 }
 
 .feature-desc img {
+  
   margin: 0;
   padding: 0;
+  margin-top: 50px;
   margin-bottom: 25px;
 }
+
+/*Жилье Еда Сувениры*/
 
 .list {
   margin: 0;
@@ -290,24 +287,32 @@ input[type="radio"].visually-hidden {
 }
 
 .features-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
   margin-left: 70px;
   margin-right: 70px;
+  
 }
 
 .features-list h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom:20px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
 }
+
+
+
 
 
 /* Заинтересовались? Поиск гостиницы в седоне*/
@@ -417,22 +422,46 @@ input[type="radio"].visually-hidden {
   position: relative;
   margin: 0;
   padding: 0;
+  outline:2px solid #00ff15;
 }
 
 .img-map-block {
-  margin: 0 auto;
-  width: 100%;
-  min-height: 450px;
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-}
+  
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 475px;
+    background-image: url("../img/map.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 60px;
+    padding-top: 76px;
+  }
+
 
 /*Подвал*/
 
 .page-footer {
+  position: relative;
   margin: 0;
   padding: 0;
-  min-height: 150px;
+  outline:2px solid #81b3d2;
+}
+
+.footer-cover{
+  position: absolute;
+  top:-170px;
+  left:50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff1e;
+  min-width:1200px;
+  min-height: 120px;
+  
 }
 
 .footer-copyright {
@@ -508,7 +537,9 @@ input[type="radio"].visually-hidden {
   fill:#ffffff30 ;
 }
 
-
+.logo-footer:hover{
+  background-image: url(../img/logo_html_hover.svg);
+}
 
 /*Кнопки*/
 .button {
