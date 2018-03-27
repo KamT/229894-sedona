@@ -150,7 +150,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   margin-bottom: 55px;
-  outline: 2px solid #ff6a00;
+  
   }
   
 .slogan-title {
@@ -172,8 +172,8 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   align-items: center;
   min-height: 150px;
-  outline: 2px solid #74f210;
   margin-bottom: 50px;
+  outline: 1px solid #ff6a00;
 }
 
 .feature-item {
@@ -190,13 +190,35 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item-desc {
-  background-color: #81b3d2;
+  display: flex;
+  justify-content:space-between;
+  flex-direction:column;
   margin: 0;
   padding: 0;
   min-width: 400px;
+  min-height:256px;
+  background-color: #81b3d2;
   color: #ffffff;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  
+  
+}
+
+.features-item-desc h2{
+  margin: 0;
+  padding: 0;
+  margin-top:45px;
+}
+
+.features-item-desc span{
+  margin: 0;
+  padding: 0;
+}
+
+.features-item-desc p{
+  margin: 0;
+  padding: 0;
+  margin-bottom:60px;
+
 }
 
 .features-item-desc1 {
@@ -209,6 +231,7 @@ input[type="radio"].visually-hidden {
 .features-image-desc {
   margin: 0;
   padding: 0;
+  display: block;
 }
 
 .feature-desc {
@@ -219,7 +242,9 @@ input[type="radio"].visually-hidden {
 .feature-desc h2 {
   margin: 0;
   padding: 0;
+  text-align: center;
   margin-bottom: 25px;
+  background-color: #ff6a00;
 }
 
 .feature-desc p {
