@@ -40,10 +40,10 @@
   <!--Welcome в Седону-->
   <main class="container">
     <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-    
+
     <!--Текст картинкой WELCOME-->
     <section class="intro">
-      
+
       <div class="intro-images-block">
         <img class="intro-welcome-text-img" src="img/welcome_text.png" width="458" height="352" alt="sedona-welcome-text">
       </div>
@@ -56,6 +56,7 @@
       <p>Рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
     </div>
 
+    <!--Настоящий городок-->
     <section class="features">
       <div class="features-item-desc">
         <h2>Настоящий городок</h2>
@@ -63,12 +64,14 @@
         <p>Седона не аттракцион для туристов,
           <br /> там течет своя жизнь</p>
       </div>
+
+      <!--Фото 1-->
       <div class="features-image-desc">
         <img src="img/galary_1.jpg" width="800" height="256" alt=Настоящий городок>
       </div>
     </section>
 
-
+    <!--Жилье Еда Сувениры-->
     <section class="list">
       <ul class="features-list">
         <li class="feature-desc">
@@ -91,8 +94,11 @@
       </ul>
     </section>
 
+
+    <!--Там есть мост дьявола-->
     <section class="features">
       <div class="features-image-desc">
+      <!--Фото 2-->
         <img src="img/galary_2.jpg" width="800" height="256" alt=Мост дьявола>
       </div>
       <div class="features-item-desc">
@@ -102,13 +108,13 @@
       </div>
     </section>
 
-
+    <!--Достопримечательности/ Небольшая площадь, дорога, туристы-->
     <section class="features">
       <div class="features-item-desc1">
         <h2>Небольшая площадь</h2>
         <span>— №3 —</span>
-        <p>
-          ВСЕ достопримечательности находятся очень близко
+        <p class="smoll">
+          Все достопримечательности находятся очень близко
         </p>
       </div>
       <div class="features-item-desc1">
@@ -123,7 +129,7 @@
       </div>
     </section>
 
-    <!-- СЛОГАН-->
+    <!-- СЛОГАН Заинтересовались?-->
     <section class="search-hotels">
       <h2 class="visually-hidden">Лучшие предложения гостиниц в Седоне</h2>
       <h2>Заинтересовались?</h2>
@@ -139,22 +145,30 @@
         <div class="img-map-block"></div>
       </div>
       <!-- ФОРМА ПОИСКА ГОСТИНИЦЫ-->
-    <section class="search-block">
-      <div class="search-conteiner">
-        <div class="search-conteiner-1">
+      <section class="search-block">
+        <div class="search-conteiner">
+          <div class="search-conteiner-1">
 
-            <table >
-                
-                <tr>
-                  <th><label for="search-date">Дата заезда:</label></th>
-                  <th><input class="kalend-img1" id="date-in" type="text" name="date-in" value="" placeholder="2017-04-24"></th> 
-                </tr>
-                <tr>
-                  <td> <label for="search-date">Дата выезда:</label></td>
-                  <td><input class="kalend-img2" id="date-out" type="text" name="date-out" value="" placeholder="2017-07-04"></td> 
-                  <td>94</td>
-                </tr>
-              </table>
+            <table>
+
+              <tr>
+                <th>
+                  <label for="search-date">Дата заезда:</label>
+                </th>
+                <th>
+                  <input class="kalend-img1" id="date-in" type="text" name="date-in" value="" placeholder="2017-04-24">
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <label for="search-date">Дата выезда:</label>
+                </td>
+                <td>
+                  <input class="kalend-img2" id="date-out" type="text" name="date-out" value="" placeholder="2017-07-04">
+                </td>
+                <td>94</td>
+              </tr>
+            </table>
 
 
 
@@ -166,35 +180,35 @@
 
 
 
-          <form class="search-items" action="https://echo.htmlacademy.ru" method="post">
-            <p class="search-item">
-              <label for="search-date">Дата заезда:</label>
-              <input class="kalend-img1" id="date-in" type="text" name="date-in" value="" placeholder="2017-04-24">
-            </p>
-            <p class="search-item">
-              <label for="search-date">Дата выезда:</label>
-              <input class="kalend-img2" id="date-out" type="text" name="date-out" value="" placeholder="2017-07-04">
+            <form class="search-items" action="https://echo.htmlacademy.ru" method="post">
+              <p class="search-item">
+                <label for="search-date">Дата заезда:</label>
+                <input class="kalend-img1" id="date-in" type="text" name="date-in" value="" placeholder="2017-04-24">
+              </p>
+              <p class="search-item">
+                <label for="search-date">Дата выезда:</label>
+                <input class="kalend-img2" id="date-out" type="text" name="date-out" value="" placeholder="2017-07-04">
 
-            </p>
-            <p class="search-item">
-              <label for="search-adult">Взрослые</label>
-              <input id="adult" type="text" name="adult" value="" placeholder="-2+">
-            </p>
-            <p class="search-item">
-              <label for="search-children">Дети</label>
-              <input id="children" type="text" name="children" value="" placeholder="-0+">
-            </p>
-          </form>
-          <button class="button-search" type="submit">Найти</button>
+              </p>
+              <p class="search-item">
+                <label for="search-adult">Взрослые</label>
+                <input id="adult" type="text" name="adult" value="" placeholder="-2+">
+              </p>
+              <p class="search-item">
+                <label for="search-children">Дети</label>
+                <input id="children" type="text" name="children" value="" placeholder="-0+">
+              </p>
+            </form>
+            <button class="button-search" type="submit">Найти</button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </section>
 
   </main>
 
 
-<!--ПОДВАЛ-->
+  <!--ПОДВАЛ-->
   <footer class="page-footer">
     <div class="container">
       <div class="footer-copyright">

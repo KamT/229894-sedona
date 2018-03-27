@@ -165,13 +165,12 @@ input[type="radio"].visually-hidden {
 
 /*Описание городка*/
 .features {
-  text-align: center;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-  min-height: 150px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
   margin-bottom: 50px;
   outline: 1px solid #ff6a00;
 }
@@ -200,7 +199,6 @@ input[type="radio"].visually-hidden {
   background-color: #81b3d2;
   color: #ffffff;
   
-  
 }
 
 .features-item-desc h2{
@@ -222,16 +220,43 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item-desc1 {
-  background-color: #ebebeb;
-  padding-top: 45px;
-  padding-left: 90px;
-  padding-right: 90px;
-  padding-bottom: 55px;
-}
-.features-image-desc {
+  display: flex;
+  justify-content:space-between;
+  flex-direction:column;
   margin: 0;
   padding: 0;
+  background-color: #ebebeb;
+  
+  min-height: 256px;
+  outline:2px solid #ff6a00;
+}
+
+.features-item-desc1 h2 {
+  margin: 0;
+  padding: 0;
+  margin-top:45px;
+}
+
+.features-item-desc1 p {
+  margin: 0;
+  padding: 0;
+  margin-bottom:60px;
+  padding-left:70px;
+  padding-right:70px;
+}
+
+.features-item-desc1 span {
+  margin: 0;
+  padding: 0;
+}
+
+.features-image-desc {
   display: block;
+  margin: 0;
+  padding: 0;
+  width:800px;
+  height:256px;
+  
 }
 
 .feature-desc {
