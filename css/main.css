@@ -118,6 +118,7 @@ input[type="radio"].visually-hidden {
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
+  z-index:1 ;
   width: 138px;
   height: 70px;
 }
@@ -554,8 +555,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin-left:70px;
   width:1056px;
-  outline:1px solid #d2e908;
- 
+  
 }
 
 legend {
@@ -584,7 +584,6 @@ legend {
   margin-right:115px;
   list-style: none;
   
- 
 }
 
 .filter li {
@@ -613,6 +612,7 @@ legend {
   /*border: 2px solid #000000;*/
 }
 
+
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
@@ -622,8 +622,12 @@ legend {
   left:-40px;
   width: 26px;
   height: 26px;
-  
+ 
 }
+
+
+
+
 
 .filter-option {
   margin: 0;
@@ -726,6 +730,13 @@ legend {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
+  
+}
+
+.range-toggle:hover {
+  width: 8px;
+  height: 8px;
+  background: #ababab;
 }
 
 .range-toggle-min {
@@ -742,8 +753,7 @@ legend {
   display: block;
   margin: 0 auto;
   padding: 6px 35px;
-  
-  font-size: 14px;
+    font-size: 14px;
   line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
@@ -751,6 +761,11 @@ legend {
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+}
+
+.btn-transparent:hover {
+  background:  #ffffff;
+  color: #000000;
 }
 
 
@@ -772,6 +787,7 @@ legend {
   padding: 0;
   
   
+  
 }
 .search-item-info{
   margin:0;
@@ -780,11 +796,11 @@ legend {
   justify-content: space-between;
   align-items: center;
   min-width:250px;
-  margin-right:500px;
+  
 }
 
 .search-item-info li {
-    list-style: none;
+   list-style: none;
 }
 .search-info b {
   margin-left:70px;
@@ -810,19 +826,18 @@ legend {
   display:flex;
   justify-content: center;
   align-items: center;
+  margin-right:0;
+  margin-left:auto;
   list-style: none;
   margin-right:70px;
   min-width: 35px;
-  outline:1px solid sandybrown;
+  
    
 }
 .buttons-top{
   margin-right: 10px;
 }
-.active {
-  color: #81b3d2;
-  
-}
+
 .search-item-info a {
   list-style: none;
   font-size: 12px;
@@ -849,6 +864,13 @@ legend {
   border-bottom: 0;
 }
 
+.current {
+  color: #81b3d2;
+  border-bottom: 1px solid transparent;
+  /*background-color: tomato;*/
+}
+
+
 .rating span {
   background-color: #f2f2f2;
 }
@@ -868,10 +890,6 @@ legend {
   
 }
 
-.catalog li{
-  list-style: none;
-}
-
 .catalog-desc{
   margin: 0;
   padding: 0;
@@ -880,15 +898,17 @@ legend {
   flex-direction:column;
   width: 100%;
   
+  
 }
 .catalog-desc h2{
   margin: 0px;
   padding:0px;
-  
+       
 }
 
 .hotel{
   margin-right:40px;
+  
 }
 
 .catalog-list-amara{
@@ -900,6 +920,7 @@ legend {
   align-items: center;
   padding-bottom:30px;
   border-bottom: 1px solid #e5e5e5;
+  
  
 }
 .catalog-image{
@@ -909,7 +930,6 @@ legend {
   min-height: 90px;
   margin-left:70px;
   margin-right:30px;
-  
   
 }
 
@@ -922,8 +942,8 @@ legend {
   display: flex;
   margin: 0px;
   padding:0px;
-  margin-bottom: 15px;
- 
+  margin-bottom: 10px;
+  
   }
 
 .catalog-btn{
@@ -931,7 +951,7 @@ legend {
   padding:0px;
   display: flex;
   flex-direction: row;
- 
+  
 }
 
 .catalog-rating{
