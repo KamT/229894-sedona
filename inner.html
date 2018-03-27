@@ -89,25 +89,30 @@
           </ul>
         </fieldset>
 
-        <!--Фильтр Стоимость в сутки-->
-        <fieldset>
-          <legend>Стоимость в сутки (Р):</legend>
-          <label for="min">
-            <input id="min" type="text" name="price" value="" placeholder="от 0">
-          </label>
-          <label for="max">
-            <input id="max" type="text" name="price" value="" placeholder="до 3000">
-          </label>
-        </fieldset>
-
-        <!--Ползунки управления-->
-        <div class="control">
-          <span>ползунок1 _________</span>
-          <span>ползунок2</span>
+        
+        <!--Панель управления фильтром-->
+        <div class="filter-range">
+          <div class="filter-range-title">Стоимость в сутки (р):
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от
+              <input type="text" name="min-price" value="0">
+            </label>
+            <label class="max-price">до
+              <input type="text" name="max-price" value="3000">
+            </label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
         </div>
 
-        <!--Кнопка показать-->
-        <button type="submit" class="button">Показать</button>
+        
       </form>
     </section>
 
