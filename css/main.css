@@ -383,11 +383,13 @@ input[type="radio"].visually-hidden {
 
 
 .search-item {
-  text-align: left;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  text-align: left;
   
     
 }
@@ -396,6 +398,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   background-color: #ff6a00;
+  width:112px;
 }
 
 .button-search {
@@ -448,14 +451,14 @@ input[type="radio"].visually-hidden {
 
 .search-item input[name="date-in"],
 .search-item input[name="date-out"]{
-  padding-left: 13px; 
+ 
 
 
 } 
 .search-item input[name="adult"],
 .search-item input[name="children"]{
   width:114px;
-  padding-left: 13px; 
+ 
 }
 
 
