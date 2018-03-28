@@ -351,7 +351,6 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
 
   position: absolute;
-  
   top:0;
   left:50%;
   transform: translate(-50%, 0);
@@ -366,19 +365,36 @@ input[type="radio"].visually-hidden {
   padding-left: 55px;
 
   box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
-  outline: 1px solid #1100ff;
+  outline: 4px solid #1100ff;
 }
+.search-hotel{
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width:460px;
+  outline: 4px solid #79c5e9;
+}
+
 
 .search-item {
   text-align: left;
-  outline: 1px solid #1100ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   
+    
 }
 
 .search-item label {
   margin: 0;
   padding: 0;
-  margin-right:10px;
   background-color: #ff6a00;
 }
 
@@ -418,7 +434,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   height:35px;
   width:345px;
-  outline: 1px solid #ff6a00;
+  outline: 1px solid #0ae75f;
   cursor: pointer;
 }
 
@@ -436,16 +452,13 @@ input[type="radio"].visually-hidden {
 
 
 } 
-
-
-.search-item label {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-  width: 110px;
-  outline: 1px solid #0099ff;
-  
+.search-item input[name="adult"],
+.search-item input[name="children"]{
+  width:114px;
+  padding-left: 13px; 
 }
+
+
 
 /*фото карты*/
 

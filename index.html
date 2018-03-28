@@ -150,26 +150,35 @@
 
       <!-- ФОРМА ПОИСКА ГОСТИНИЦЫ-->
       <form class="search-items" action="https://echo.htmlacademy.ru" method="post">
-        <p class="search-item">
-          <label class="entry" for="search-date">Дата заезда:</label>
-          <a class="date-of-entry-cal" href="#">
-            <span class="icon-calendar"></span>
-          </a>
+        <div class="search-hotel">
 
-          <input id="date-in" type="text" name="date-in" value="" placeholder="24 Апреля 2017">
-        </p>
-        <p class="search-item">
-          <label for="search-date">Дата выезда:</label>
-          <input class="kalend-img2" id="date-out" type="text" name="date-out" value="" placeholder="4 июля 2017">
+          <!-- Дата заезда-->
+          <p class="search-item">
+            <label class="entry" for="search-date">Дата заезда:</label>
+            <a class="date-of-entry-cal" href="#">
+              <span class="icon-calendar"></span>
+            </a>
+      
+            <input id="date-in" type="text" name="date-in" value="" placeholder="24 Апреля 2017">
+          </p>
 
-        </p>
-        <p class="search-item">
-          <label for="search-adult">Взрослые</label>
-          <input class="adult" id="adult" type="text" name="adult" value="" placeholder="-2+">
+          <!-- Дата выезда-->
+          <p class="search-item">
+            <label for="search-date">Дата выезда:</label>
+            <input class="kalend-img2" id="date-out" type="text" name="date-out" value="" placeholder="4 июля 2017">
+      
+          </p>
 
-          <label for="search-children">Дети</label>
-          <input class="children" id="children" type="text" name="children" value="" placeholder="-0+">
-        </p>
+          <!-- Взрослые / Дети-->
+          <p class="search-item">
+            <label for="search-adult">Взрослые</label>
+            <input class="adult" id="adult" type="text" name="adult" value="" placeholder="-2+">
+      
+            <label for="search-children">Дети</label>
+            <input class="children" id="children" type="text" name="children" value="" placeholder="-0+">
+          </p>
+        </div>
+      
       </form>
       <button class="button-search" type="submit">Найти</button>
     </section>
