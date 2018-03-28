@@ -144,68 +144,36 @@
     <!-- Карта изображение-->
     <section class="map-block">
       <h3 class="visually-hidden">Карта Седоны</h3>
-      
-        <div class="img-map-block"></div>
+
+      <div class="img-map-block"></div>
       </div>
-      
-      
+
+
       <!-- ФОРМА ПОИСКА ГОСТИНИЦЫ-->
       <section class="search-block">
         <div class="search-conteiner">
-          <div class="search-conteiner-1">
 
-            <table>
+          <form class="search-items" action="https://echo.htmlacademy.ru" method="post">
+            <p class="search-item">
+              <label for="search-date">Дата заезда:</label>
+              <input class="kalend-img1" id="date-in" type="text" name="date-in" value="" placeholder="2017-04-24">
+            </p>
+            <p class="search-item">
+              <label for="search-date">Дата выезда:</label>
+              <input class="kalend-img2" id="date-out" type="text" name="date-out" value="" placeholder="2017-07-04">
 
-              <tr>
-                <th>
-                  <label for="search-date">Дата заезда:</label>
-                </th>
-                <th>
-                  <input class="kalend-img1" id="date-in" type="text" name="date-in" value="" placeholder="2017-04-24">
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  <label for="search-date">Дата выезда:</label>
-                </td>
-                <td>
-                  <input class="kalend-img2" id="date-out" type="text" name="date-out" value="" placeholder="2017-07-04">
-                </td>
-                <td>94</td>
-              </tr>
-            </table>
-
-
-
-
-
-
-
-
-
-
-
-            <form class="search-items" action="https://echo.htmlacademy.ru" method="post">
-              <p class="search-item">
-                <label for="search-date">Дата заезда:</label>
-                <input class="kalend-img1" id="date-in" type="text" name="date-in" value="" placeholder="2017-04-24">
-              </p>
-              <p class="search-item">
-                <label for="search-date">Дата выезда:</label>
-                <input class="kalend-img2" id="date-out" type="text" name="date-out" value="" placeholder="2017-07-04">
-
-              </p>
-              <p class="search-item">
-                <label for="search-adult">Взрослые</label>
-                <input id="adult" type="text" name="adult" value="" placeholder="-2+">
-              </p>
-              <p class="search-item">
-                <label for="search-children">Дети</label>
-                <input id="children" type="text" name="children" value="" placeholder="-0+">
-              </p>
-            </form>
-            <button class="button-search" type="submit">Найти</button>
-          </div>
+            </p>
+            <p class="search-item">
+              <label for="search-adult">Взрослые</label>
+              <input id="adult" type="text" name="adult" value="" placeholder="-2+">
+            
+            
+              <label for="search-children">Дети</label>
+              <input id="children" type="text" name="children" value="" placeholder="-0+">
+            </p>
+          </form>
+          <button class="button-search" type="submit">Найти</button>
+        </div>
         </div>
       </section>
     </section>
@@ -254,9 +222,9 @@
           <div class="website">
             <p>website by</p>
             <a href="#">
-                <span class="visually-hidden">html academy</span>
+              <span class="visually-hidden">html academy</span>
               <img class="logo-footer" src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип «HTML»">
-              
+
             </a>
           </div>
         </div>
