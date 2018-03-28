@@ -337,41 +337,51 @@ input[type="radio"].visually-hidden {
 }
 
 
-/*Форма заезда*/
+/*ФОРМА ПОИСКА ГОСТИНИЦЫ*/
 
-.search-block {
+.search-items{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+
   position: absolute;
+  
   top:0;
   left:50%;
   transform: translate(-50%, 0);
   background-color: #ffffff;
   width: 568px; 
   height:395px;
-}
 
-.search-conteiner {
-  display:flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  
-  padding: 0;
-  margin: 0;
-  margin-top:50px;
-  width:460px;
-  min-height: 170px;
-  outline: 1px solid #00ff15;
-  
+  padding: 55px;
+  padding-top: 55px;
+  padding-right: 55px;
+  padding-bottom: 55px;
+  padding-left: 55px;
+
+  box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
+  outline: 1px solid #1100ff;
 }
 
 .search-item {
   text-align: left;
+  outline: 1px solid #1100ff;
   
 }
+
+.search-item label {
+  margin: 0;
+  padding: 0;
+  margin-right:10px;
+  background-color: #ff6a00;
+}
+
 .button-search {
   display: block;
   position: absolute;
@@ -408,11 +418,9 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   height:35px;
   width:345px;
-  
   outline: 1px solid #ff6a00;
-
+  cursor: pointer;
 }
-
 
 .search-item input:hover {
   background-color: #ebebeb;
@@ -422,6 +430,12 @@ input[type="radio"].visually-hidden {
   background-color: #ebebeb;
 }
 
+.search-item input[name="date-in"],
+.search-item input[name="date-out"]{
+  padding-left: 13px; 
+
+
+} 
 
 
 .search-item label {
