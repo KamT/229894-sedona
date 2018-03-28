@@ -7,6 +7,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
+  
 }
 
 a {
@@ -49,10 +50,12 @@ input[type="radio"].visually-hidden {
   min-width: 768px;
   margin: 0 auto;
   padding: 0 73px;
+  
 }
 .main-navigation-wrapper .container {
   display: flex;
   justify-content: space-between;
+  
 }
 
 /* Шапка сайта*/
@@ -340,6 +343,7 @@ input[type="radio"].visually-hidden {
 /*ФОРМА ПОИСКА ГОСТИНИЦЫ*/
 
 .search-items{
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -365,7 +369,7 @@ input[type="radio"].visually-hidden {
   padding-left: 55px;
 
   box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
-  outline: 4px solid #1100ff;
+  
 }
 .search-hotel{
   margin: 0;
@@ -378,40 +382,47 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
 
   width:460px;
-  outline: 4px solid #79c5e9;
+ 
 }
 
-
 .search-item {
+margin:0;
+padding: 0;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  text-align: left;
-  
-    
+margin-bottom:30px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+ 
 }
 
 .search-item label {
   margin: 0;
   padding: 0;
-  background-color: #ff6a00;
+  
   width:112px;
+  font: inherit;
+  text-transform:uppercase;
+  color: #000000;
+  
+  font-weight: 700;
 }
 
 .button-search {
   display: block;
   position: absolute;
-  bottom: 55px;
+  bottom: 210px;
   left: 50%;
   transform: translate(-50%, 0);
+
+  z-index: 2;
   
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #81b3d2;
+  width: 460px;
   padding: 20px 195px;
   border: none;
 }
@@ -432,12 +443,12 @@ input[type="radio"].visually-hidden {
   padding: 0;
   font: inherit;
   text-transform:uppercase;
-  color: #000000;
+  
   background-color: #f2f2f2;
   font-weight: 700;
-  height:35px;
-  width:345px;
-  outline: 1px solid #0ae75f;
+  height:38px;
+  width:333px;
+  
   cursor: pointer;
 }
 
@@ -447,17 +458,21 @@ input[type="radio"].visually-hidden {
 
 .search-item input:active {
   background-color: #ebebeb;
+  color:#000000;
 }
+
 
 .search-item input[name="date-in"],
 .search-item input[name="date-out"]{
- 
-
+  padding-left:12px;
+  
 
 } 
 .search-item input[name="adult"],
 .search-item input[name="children"]{
-  width:114px;
+ 
+  width:60px;
+  padding-left:54px;
  
 }
 
@@ -599,7 +614,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background-color: #81b3d2;
   padding: 6px 16px;
-  margin-right:5px;
+  
 }
 
 .button:hover {
