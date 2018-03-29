@@ -307,7 +307,7 @@ position: relative;
   padding: 0;
   margin-bottom: 83px;
   padding-top:8px;
-  outline:2px solid #5496bd;
+  
   
 }
 
@@ -619,7 +619,7 @@ align-items: center;
 
 .footer-cover{
   position: absolute;
-  bottom:60px;
+  bottom:58px;
   left: 50%;
   transform: translate(-50%, 0);
   margin: 0;
@@ -637,7 +637,7 @@ align-items: center;
   align-content:center;
   height: 120px;
   background-color: rgba(255, 255, 255, 0.91);
-  outline:1px solid #81b3d2;
+  
 }
 .visitsedona {
   color: #000000;
@@ -653,20 +653,24 @@ align-items: center;
 
 .website {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
   margin: 0;
   padding: 0;
-  width: 197px;
+  
+  width: 33%;
   height: 40px;
-  margin-right:103px;
+
+  
+  
   
 
 }
 .website p {
   margin: 0;
   padding: 0;
+  margin-right:6px;
   
 }
 
@@ -682,10 +686,12 @@ align-items: center;
   padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 150px;
+  width: 33%;
   height: 50px;
+
+ 
 }
 
 
@@ -699,7 +705,7 @@ align-items: center;
   align-items: center;
   width: 46px;
   height: 48px;
-  margin-left: 8px;
+  margin-left: 5px;
   background-color: #81b3d2;
 }
 
