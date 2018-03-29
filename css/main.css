@@ -134,8 +134,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 520px;
-  background-image: url("../img/background_photo1_1200.jpg");
+  min-height: 433px;
+  background-image: url("../img/background_photo2_1200.jpg");
   background-repeat: no-repeat;
   background-color: #5496bd;
   background-size: 100% 100%;
@@ -152,14 +152,21 @@ input[type="radio"].visually-hidden {
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
   
   }
   
 .slogan-title {
   font-size: 21px;
   line-height: 26px;
+  margin: 0;
+  padding: 0;
+  
+  padding-bottom: 14px;
+
 }
+
+
 
 .slogan p {
   font-size: 14px;
@@ -174,21 +181,12 @@ input[type="radio"].visually-hidden {
   text-align: center;
   margin: 0;
   padding: 0;
+
+  outline:1px solid #00ff15;
   
 }
 
-.feature-item {
-  text-align: center;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-}
 
-.feature-item h2 {
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 700;
-}
 
 .features-item-desc {
   display: flex;
@@ -206,7 +204,7 @@ input[type="radio"].visually-hidden {
 .features-item-desc h2{
   margin: 0;
   padding: 0;
-  margin-top:45px;
+  margin-top:50px;
 }
 
 .features-item-desc span{
@@ -229,7 +227,8 @@ input[type="radio"].visually-hidden {
   padding: 0;
   background-color: #ebebeb;
   min-height: 256px;
-  
+
+ 
 }
 
 .features-item-desc1 h2 {
@@ -252,41 +251,68 @@ input[type="radio"].visually-hidden {
 }
 
 .features-image-desc {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
   margin: 0;
   padding: 0;
   width:800px;
   height:256px;
-  
+  background-color: #c1f30d;
+ 
+}
+
+.feature-desc {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  margin-left:45px;
+  margin-right:45px;
   
 }
-.feature-desc {
+.feature-desc h2 {
   margin: 0;
   padding: 0;
   
+  
+  background-color: #c1f30d;
+ 
 }
+
 .feature-desc p {
   margin: 0;
   padding: 0;
-  text-align: top;
-  background-color: #00ff15;
+
+  background-color: #da771a;
+  
+  
+ 
   
 }
-
+/*Пиктограмки Жилье еда сувениры*/
 .feature-desc img {
-  
   margin: 0;
   padding: 0;
   margin-top: 50px;
   margin-bottom: 25px;
+  background-color: #00ff15;
 }
 
 /*Жилье Еда Сувениры*/
 
 .list {
+  
   margin: 0;
   padding: 0;
-  margin-bottom: 75px;
+  margin-bottom: 90px;
+  padding-top:9px;
+  
+
 }
 
 .features-list {
@@ -300,9 +326,9 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: 70px;
-  margin-right: 70px;
   
+ 
+
 }
 
 .features-list h2 {
@@ -322,10 +348,13 @@ input[type="radio"].visually-hidden {
 
 .search-hotels{
   text-align: center;
-  outline-color:1px solid #ff6a00;
+  outline-color:2px solid #ff6a00;
 }
 
 .search-hotels h2{
+  margin: 0;
+  padding:0;
+  padding-top:47px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
