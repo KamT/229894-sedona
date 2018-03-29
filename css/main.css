@@ -419,7 +419,7 @@ justify-content: center;
 align-items: center;
  
 }
-
+/*Календарики*/
 .icon-calendar::before{
   content: "";
   position: absolute;
@@ -432,7 +432,7 @@ align-items: center;
   height: 26px;
 
 }
-
+/*Календарики*/
 .icon-calendar::after{
   content: "";
   position: absolute;
@@ -445,11 +445,11 @@ align-items: center;
   height: 26px;
 
 }
-
+/*Иконка МИНУС*/
 .icon-minus::before{
   content: "";
   position: absolute;
-  top: 200px;
+  top: 198px;
   left: 184px;
   transform: skew(90);
   width: 3px;
@@ -459,24 +459,11 @@ align-items: center;
   transform: rotate(90deg);
 }
 
-
-.icon-minus::before{
-  content: "";
-  position: absolute;
-  top: 200px;
-  left: 184px;
-  transform: skew(90);
-  width: 3px;
-  height: 13px;
-  transform: translate(-50%, -50%);
-  background: #a9a9a9;
-  transform: rotate(90deg);
-}
-
+/*Иконка МИНУС*/
 .icon-minus::after{
   content: "";
   position: absolute;
-  top: 200px;
+  top: 198px;
   left: 260px;
   
   width: 3px;
@@ -486,14 +473,33 @@ align-items: center;
   transform: rotate(90deg);
 }
 
+/*Иконка Плюс*/
+.icon-plus::before{
+  content: "";
+  position: absolute;
+  top: 205px;
+  left: 261px;
+  
+  width: 3px;
+  height: 13px;
+  transform: translate(-50%, -50%);
+  background: #a9a9a9;
+  
+}
 
-
-
-
-
-
-
-
+/*Правые иконки минус и плюс*/
+.children::after{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  
+  width: 3px;
+  height: 13px;
+  transform: translate(-50%, -50%);
+  background: #a9a9a9;
+  transform: rotate(90deg);
+}
 
 .search-item label {
   margin: 0;
@@ -545,7 +551,7 @@ align-items: center;
   
   background-color: #f2f2f2;
   font-weight: 700;
-  height:38px;
+  height:36px;
   width:333px;
   
   cursor: pointer;
@@ -572,14 +578,14 @@ align-items: center;
  
   width:60px;
   padding-left:54px;
- 
-}
-
-.adult{
   
-  background-color: #ee0987;
 }
 
+.search-children{
+  text-align: center;
+
+  
+}
 
 
 
