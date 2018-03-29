@@ -407,12 +407,38 @@ input[type="radio"].visually-hidden {
 margin:0;
 padding: 0;
 
-margin-bottom:20px;
+margin-bottom:24px;
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
  
+}
+
+.icon-calendar::before{
+  content: "";
+  position: absolute;
+  background-image: url(../img/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  right:58px;
+  top:64px;
+  width: 26px;
+  height: 26px;
+
+}
+
+.icon-calendar::after{
+  content: "";
+  position: absolute;
+  background-image: url(../img/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  right:58px;
+  top:130px;
+  width: 26px;
+  height: 26px;
+
 }
 
 .search-item label {
@@ -430,7 +456,7 @@ align-items: center;
 .button-search {
   display: block;
   position: absolute;
-  bottom: 213px;
+  bottom: 252px;
   left: 50%;
   transform: translate(-50%, 0);
 
@@ -495,6 +521,12 @@ align-items: center;
  
 }
 
+.adult{
+  
+  background-color: #ee0987;
+}
+
+
 
 
 /*фото карты*/
@@ -518,7 +550,7 @@ align-items: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin-bottom: 60px;
-  padding-top: 76px;
+  padding-top: 115px;
   }
 
 
@@ -533,7 +565,7 @@ align-items: center;
 
 .footer-cover{
   position: absolute;
-  top:-140px;
+  top:-178px;
   left:50%;
   left: 50%;
   transform: translate(-50%, 0);
@@ -567,14 +599,24 @@ align-items: center;
 
 .website {
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
   margin: 0;
   padding: 0;
-  width: 125px;
+  width: 197px;
+  height: 40px;
+  background-color: #669ec0;
 }
 .website p {
   margin: 0;
   padding: 0;
-  width:82px;
+  
+}
+
+.website a {
+ color:#000000;
+  
 }
 
 .social-btn {
