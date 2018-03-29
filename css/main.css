@@ -441,6 +441,21 @@ align-items: center;
 
 }
 
+.icon-minus::before{
+  content: "";
+  position: absolute;
+  top: 208px;
+  left: 180px;
+  transform: skew(90);
+  width: 3px;
+  height: 15px;
+  transform: translate(-50%, -50%);
+  background: #a9a9a9;
+}
+
+
+
+
 .search-item label {
   margin: 0;
   padding: 0;
@@ -566,7 +581,7 @@ align-items: center;
 .footer-cover{
   position: absolute;
   top:-178px;
-  left:50%;
+
   left: 50%;
   transform: translate(-50%, 0);
   margin: 0;
@@ -607,6 +622,8 @@ align-items: center;
   width: 197px;
   height: 40px;
   background-color: #669ec0;
+ outline:1px solid #f06407;
+
 }
 .website p {
   margin: 0;
