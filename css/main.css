@@ -427,12 +427,15 @@ cursor: pointer;
 border: none;
 background-color: #f2f2f2;
 color: #000000;
+
+
 }
+
 
 .icon-calendar{
 position: absolute;
 top: 62px;
-right: 62px;
+right: 64px;
 display: inline-block;
 border: 0;
 background-color: transparent;
@@ -441,12 +444,29 @@ margin:0;
 padding: 0;
 
 }
+
+
+
+
 .icon-calendar:hover{
   fill:#000000;
 }
 .icon-calendar:active{
   fill:#81b3d2;
 }
+
+.icon-minus,
+.icon-plus{
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f2f2;
+  color: #000000;
+  width:38px;
+  height:38px;
+}
+
+
 
 
 /*Календарики
@@ -531,6 +551,9 @@ padding: 0;
 
 }
 
+
+/*Кнопки Формы поиска гостиницы*/
+
 .search-item input {
   
   margin: 0;
@@ -564,9 +587,15 @@ padding: 0;
 } 
 .search-item input[name="adult"],
 .search-item input[name="children"]{
- 
-  width:60px;
-  padding-left:54px;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f2f2;
+  color: #000000;
+  text-align: center;
+  width:38px;
+  height:38px;
+  
   
 }
 
