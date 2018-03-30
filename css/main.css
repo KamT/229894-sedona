@@ -412,14 +412,44 @@ position: relative;
 margin:0;
 padding: 0;
 
-margin-bottom:24px;
+margin-bottom:30px;
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
  
 }
-/*Календарики*/
+
+.date-in,
+.date-out{
+position: relative;
+cursor: pointer;
+border: none;
+background-color: #f2f2f2;
+color: #000000;
+}
+
+.icon-calendar{
+position: absolute;
+top: 62px;
+right: 62px;
+display: inline-block;
+border: 0;
+background-color: transparent;
+fill:#cacaca;
+margin:0;
+padding: 0;
+
+}
+.icon-calendar:hover{
+  fill:#000000;
+}
+.icon-calendar:active{
+  fill:#81b3d2;
+}
+
+
+/*Календарики
 .icon-calendar::before{
   content: "";
   position: absolute;
@@ -432,7 +462,7 @@ align-items: center;
   height: 26px;
 
 }
-/*Календарики*/
+
 .icon-calendar::after{
   content: "";
   position: absolute;
@@ -445,61 +475,20 @@ align-items: center;
   height: 26px;
 
 }
-/*Иконка МИНУС*/
-.icon-minus::before{
+.icon-mius::before{
   content: "";
   position: absolute;
-  top: 198px;
-  left: 184px;
-  transform: skew(90);
-  width: 3px;
-  height: 13px;
-  transform: translate(-50%, -50%);
-  background: #a9a9a9;
-  transform: rotate(90deg);
+  background-image: url(../img/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  right:58px;
+  top:64px;
+  width: 26px;
+  height: 26px;
 }
 
-/*Иконка МИНУС*/
-.icon-minus::after{
-  content: "";
-  position: absolute;
-  top: 198px;
-  left: 260px;
-  
-  width: 3px;
-  height: 13px;
-  transform: translate(-50%, -50%);
-  background: #a9a9a9;
-  transform: rotate(90deg);
-}
+*/
 
-/*Иконка Плюс*/
-.icon-plus::before{
-  content: "";
-  position: absolute;
-  top: 205px;
-  left: 261px;
-  
-  width: 3px;
-  height: 13px;
-  transform: translate(-50%, -50%);
-  background: #a9a9a9;
-  
-}
-
-/*Правые иконки минус и плюс*/
-.children::after{
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  
-  width: 3px;
-  height: 13px;
-  transform: translate(-50%, -50%);
-  background: #a9a9a9;
-  transform: rotate(90deg);
-}
 
 .search-item label {
   margin: 0;
@@ -584,7 +573,6 @@ align-items: center;
 .search-children{
   text-align: center;
 
-  
 }
 
 
@@ -743,7 +731,7 @@ align-items: center;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #81b3d2;
-  padding: 6px 16px;
+  padding: 5px 15px;
   
 }
 
@@ -790,7 +778,7 @@ align-items: center;
   font-weight: 700;
   color: #ffffff;
   background-color: #766357;
-  padding: 6px 16px;
+  padding: 5px 15px;
 }
 
   .button2:hover {
@@ -806,7 +794,7 @@ align-items: center;
 
 /*Внутренняя страница*/
 
-/*Фильтр*/
+/*Фильтр ИНфраструктура Тип гостиница*/
 .filters {
   display: flex;
   position: relative;
@@ -837,8 +825,8 @@ legend {
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
-  padding-top:28px;
-  padding-bottom:25px;
+  padding-top:26px;
+  padding-bottom:28px;
 }
 
 .filter fieldset {
@@ -854,7 +842,7 @@ legend {
   padding: 0;
   margin: 0;
   margin-left:40px;
-  margin-right:115px;
+  margin-right:145px;
   list-style: none;
   
 }
@@ -862,7 +850,7 @@ legend {
 .filter li {
   padding: 0;
   margin: 0;
-  margin-bottom:20px;
+  margin-bottom:18px;
 }
 
 
@@ -871,6 +859,7 @@ legend {
   display: block;
   cursor: pointer;
   user-select: none;
+  
 }
 
 .filter-input-checkbox:not(:checked) + label::before {
@@ -879,10 +868,10 @@ legend {
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  left:-40px;
+  left:-38px;
   width: 26px;
   height: 26px;
-  /*border: 2px solid #000000;*/
+  
 }
 
 
@@ -892,15 +881,12 @@ legend {
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  left:-40px;
+  left:-38px;
   width: 26px;
   height: 26px;
  
+ 
 }
-
-
-
-
 
 .filter-option {
   margin: 0;
@@ -908,13 +894,17 @@ legend {
   list-style: none;
   color: #ffffff;
   
+  
 }
+
+
+
 /*Панель управления фильтром*/
 
 .filter-range{
   padding: 0;
   margin: 0;
-  width:330px;
+  width:318px;
   color: #ffffff;
   text-transform: uppercase;
   padding-top:28px;
@@ -1050,9 +1040,9 @@ legend {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height:90px;
+  min-height:88px;
   border-bottom: 1px solid #e5e5e5;
-  margin-bottom:30px;
+  margin-bottom:20px;
   
 }
 .search-list-info{
@@ -1150,7 +1140,7 @@ legend {
 
 .buttons {
   list-style: none;
-  background-color: red;
+  
 }
 /************************************/
 /*Фото и описания гостиниц Amara Resort & Spa*/
@@ -1160,6 +1150,7 @@ legend {
   padding:0px;
   border-bottom: 1px solid #e5e5e5;
   padding-bottom:30px;
+
   
 }
 
@@ -1170,12 +1161,14 @@ legend {
   justify-content: space-between;
   flex-direction:column;
   width: 100%;
+ 
   
   
 }
 .catalog-desc h2{
   margin: 0px;
   padding:0px;
+ 
        
 }
 
@@ -1191,7 +1184,7 @@ legend {
   justify-content: space-between;
   flex-direction:row;
   align-items: center;
-  padding-bottom:30px;
+  padding-bottom:21px;
   border-bottom: 1px solid #e5e5e5;
   
  
@@ -1223,6 +1216,8 @@ legend {
   margin: 0px;
   padding:0px;
   display: flex;
+  justify-content: space-between;
+  width:260px;
   flex-direction: row;
   
 }
@@ -1272,7 +1267,7 @@ legend {
   justify-content: space-between;
   flex-direction:row;
   align-items: center;
-  padding-top:30px;
+  padding-top:20px;
 }
 .villas{
   margin-right:20px;
