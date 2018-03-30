@@ -1092,9 +1092,6 @@ legend {
   
   border-bottom: 1px solid #e5e5e5;
   
-  
- 
-  
 }
 .search-list-info{
   margin:0;
@@ -1212,15 +1209,13 @@ legend {
   flex-direction:column;
   width: 100%;
   
- 
-  
   
 }
 .catalog-desc h2{
   margin: 0px;
   padding:0px;
- 
-       
+  margin-bottom:5px;
+  
 }
 
 .hotel{
@@ -1235,11 +1230,10 @@ legend {
   justify-content: space-between;
   flex-direction:row;
   align-items: center;
-  padding-bottom:30px;
-  padding-top:30px;
+  padding-bottom:25px;
+  padding-top:25px;
   border-bottom: 1px solid #e5e5e5;
-  
-  
+   
  
 }
 .catalog-image{
@@ -1249,7 +1243,7 @@ legend {
   min-height: 90px;
   margin-left:70px;
   margin-right:30px;
-  
+ 
 }
 
 .catalog-image img{
@@ -1261,7 +1255,7 @@ legend {
   display: flex;
   margin: 0px;
   padding:0px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   
   }
 
@@ -1272,6 +1266,7 @@ legend {
   justify-content: space-between;
   width:255px;
   flex-direction: row;
+  padding-bottom: 0;
   
 }
 
@@ -1303,8 +1298,8 @@ legend {
   justify-content: space-between;
   flex-direction:row;
   align-items: center;
-  padding-top:30px;
-  padding-bottom:30px;
+  padding-top:25px;
+  padding-bottom:25px;
   border-bottom: 1px solid #e5e5e5;
 }
 .motel{
@@ -1319,7 +1314,7 @@ legend {
   justify-content: space-between;
   flex-direction:row;
   align-items: center;
-  padding-top:30px;
+  padding-top:25px;
 }
 .villas{
   margin-right:24px;
