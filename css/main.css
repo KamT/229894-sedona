@@ -165,7 +165,7 @@ position: relative;
   padding: 0;
   background-color: #ffffff;
   padding-top:60px;
-height: 157px;
+height: 156px;
   
   }
   
@@ -192,8 +192,8 @@ height: 157px;
   text-align: center;
   margin: 0;
   padding: 0;
+ 
   
-
 }
 
 
@@ -211,9 +211,9 @@ height: 157px;
 }
 
 .features-item-desc h2{
-  margin: 0;
+  margin: 0 ;
   padding: 0;
-  margin-top:46px;
+  margin-top:43px;
 }
 
 .features-item-desc span{
@@ -222,10 +222,10 @@ height: 157px;
 }
 
 .features-item-desc p{
-  margin: 0;
+  margin: 0 48px;
   padding: 0;
-  margin-bottom:56px;
-
+  margin-bottom:58px;
+  width: 306px;
 }
 
 .features-item-desc1 {
@@ -233,10 +233,10 @@ height: 157px;
   justify-content:space-between;
   flex-direction:column;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   background-color: #ebebeb;
   min-height: 256px;
-
+  
  
 }
 
@@ -263,7 +263,7 @@ height: 157px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  align-items: center;
+  
   margin: 0;
   padding: 0;
   width:800px;
@@ -278,7 +278,7 @@ height: 157px;
   align-items: center;
   width: 400px;
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
   margin-left:45px;
   margin-right:45px;
   
@@ -293,9 +293,7 @@ height: 157px;
   margin: 0;
   padding: 0;
   margin-top:5px;
-  
-  
-  
+ 
 }
 /*Пиктограмки Жилье еда сувениры*/
 .feature-desc img {
@@ -303,7 +301,7 @@ height: 157px;
   margin: 0;
   padding: 0;
   margin-top: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   
 }
 
