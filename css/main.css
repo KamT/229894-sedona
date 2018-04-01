@@ -406,10 +406,6 @@ height: 156px;
   height:395px;
 
   padding: 55px;
-  padding-top: 55px;
-  padding-right: 55px;
-  padding-bottom: 55px;
-  padding-left: 55px;
 
   box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
   
@@ -417,29 +413,121 @@ height: 156px;
 .search-hotel{
   margin: 0;
   padding: 0;
-
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-
   width:460px;
- 
 }
+
 
 .search-item {
-position: relative;
-margin:0;
-padding: 0;
-
-margin-bottom:30px;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
- 
+  margin:0;
+  padding: 0;
+  margin-bottom:30px;
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
 }
+
+.search-item label {
+  margin: 0;
+  padding: 0px;
+  font: inherit;
+  text-transform:uppercase;
+  color: #000000;
+  font-weight: 700;
+  width:164px;
+}
+
+.search-item input {
+  
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  text-transform:uppercase;
+  
+  background-color: #f2f2f2;
+  font-weight: 700;
+  height:36px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.search-item button{
+  
+  border: 0;
+  fill:#cacaca;
+  margin:0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.icon-calendar{
+  position: absolute;
+  right: 65px;
+  border: 0;
+  fill:#cacaca;
+  margin:0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.search-item button:hover{
+  fill:#000000;
+}
+.search-item button:active{
+  fill:#81b3d2;
+}
+
+.search-item button span:hover path,
+.search-item button span:hover rect{
+    fill: #000000;
+}
+
+.search-item button span:active path,
+.search-item button span:active rect{
+    fill: #81b3d2;
+}
+
+
+.search-item input:hover {
+  background-color: #ebebeb;
+}
+
+.search-item input:active {
+  background-color: #ebebeb;
+  color:#000000;
+}
+
+
+.search-item input[name="date-in"],
+.search-item input[name="date-out"]{
+  padding-left:12px;
+} 
+
+.search-item input[name="adult"],
+.search-item input[name="children"]{
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f2f2;
+  color: #000000;
+  text-align: center;
+  width:38px;
+  height:38px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  
+  text-transform: uppercase;
+  
+}
+
+
 
 .date-in,
 .date-out{
@@ -450,36 +538,6 @@ background-color: #f2f2f2;
 color: #000000;
 
 }
-
-
-.icon-calendar{
-position: absolute;
-top: 8px;
-right: 10px;
-display: inline-block;
-border: 0;
-background-color: transparent;
-fill:#cacaca;
-margin:0;
-padding: 0;
-
-}
-
-.icon-calendar:hover{
-  fill:#000000;
-}
-.icon-calendar:active{
-  fill:#81b3d2;
-}
-
-.icon-calendar span:hover path,
-.icon-calendar span:hover rect{
-    fill: #000000;
-      }
-.icon-calendar span:active path,
-.icon-calendar span:active rect{
-    fill: #81b3d2;
-      }
 
 
 .icon-minus,
@@ -525,54 +583,6 @@ padding: 0;
 
 /*Кнопки Формы поиска гостиницы*/
 
-.search-item input {
-  
-  margin: 0;
-  padding: 0;
-  font: inherit;
-  text-transform:uppercase;
-  
-  background-color: #f2f2f2;
-  font-weight: 700;
-  height:36px;
-  width:333px;
-  
-  cursor: pointer;
-}
-
-.search-item input:hover {
-  background-color: #ebebeb;
-}
-
-.search-item input:active {
-  background-color: #ebebeb;
-  color:#000000;
-}
-
-
-.search-item input[name="date-in"],
-.search-item input[name="date-out"]{
-  padding-left:12px;
-  
-
-} 
-.search-item input[name="adult"],
-.search-item input[name="children"]{
-  font: inherit;
-  text-transform: uppercase;
-  border: none;
-  background-color: #f2f2f2;
-  color: #000000;
-  text-align: center;
-  width:38px;
-  height:38px;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 26px;
-  
-  text-transform: uppercase;
-  
-}
 
 .search-children{
   text-align: center;
@@ -580,29 +590,9 @@ padding: 0;
 }
 
 
-
-
-
-.search-item label {
-  margin: 0;
-  padding: 0;
-  
-  width:115px;
-  font: inherit;
-  text-transform:uppercase;
-  color: #000000;
-  
-  font-weight: 700;
-}
-
 .button-search {
   display: block;
-  position: absolute;
   bottom: 252px;
-  left: 50%;
-  transform: translate(-50%, 0);
-
-  z-index: 2;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
